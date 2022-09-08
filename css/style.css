@@ -1,0 +1,142 @@
+/*== GERAL ==*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --background: #F3F5F7;
+  --background-gradient: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+  --color-text: hsla(0, 0%, 100%, 1);
+}
+
+body {
+  background-color: var(--background);
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+#header {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background: var(--background-gradient);
+  margin-bottom: 50px;
+}
+
+.nav-header {
+  width: 70%;
+  height: 60%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  line-height: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--color-text);
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  padding: 15px;
+  background-color: #6D96E7;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.search input {
+  width: 100%;
+  border: 0;
+  margin-left: 5px;
+  background-color: transparent;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0;
+}
+
+::placeholder {
+  color: #fff;
+  outline: 0;
+}
+
+/* MAIN */
+main #main {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.cards .date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards .date h2 {
+  font-family: 'Inter', sans-serif;
+  line-height: 20px;
+  font-size: 24px;
+  color: #1A202C;
+  margin-bottom: 20px;
+}
+
+.cards .title-text p {
+   line-height: 2rem;
+   color: #717171;
+}
+
+/*==MEDIA QUERIES==*/
+
+@media (min-width: 1024px) {
+  html {
+      font-size: 55%;
+  }
+
+  .container, .nav-header {
+      width: 90%;
+  }
+
+  .cards {
+      padding: 30px 20px;
+  }
+}
+
+@media (min-width: 1366px) {
+  html {
+      font-size: 98.5%;
+  }
+
+  .container,
+  .nav-header {
+      width: 70%;
+  }
+}
