@@ -13,6 +13,6 @@ Desafio_1
 
 🔖 Layout do projecto | Versão DESKTOP/MOBILE
 
-🚀  Link Git page: 
+🚀  Link Git page:  https://corde177.github.io/blog/
 
 ![blog](https://user-images.githubusercontent.com/56198906/189095884-346e0413-247a-41c5-aa98-386a92288a46.png)
